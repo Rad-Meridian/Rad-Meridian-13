@@ -26,11 +26,11 @@
 	. = ..()
 	icon_state = initial(icon_state) + "_active"
 	inhand_icon_state = icon_state
-	playsound(src, 'mojave/sound/ms13weapons/grenade_pin.wav', 20, TRUE)
+	playsound(src, 'mojave/sound/ms13weapons/grenade_pin.ogg', 20, TRUE)
 
 /obj/item/grenade/frag/ms13/dropped(mob/user, silent)
 	. = ..()
-	playsound(src, 'mojave/sound/ms13weapons/grenade.wav', 20, TRUE)
+	playsound(src, 'mojave/sound/ms13weapons/grenade.ogg', 20, TRUE)
 
 /obj/item/grenade/frag/ms13/charge
 	name = "explosive charge"

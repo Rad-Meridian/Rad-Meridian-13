@@ -1,3 +1,5 @@
+//RM, removed purple eyes from eye color lists. Commented out underwear randomization. Underwear is not an option. Commando nation!
+
 //Hair Colour
 
 /proc/random_hair_color()
@@ -64,9 +66,6 @@ GLOBAL_LIST_INIT(eye_colors, sort_list(list(
 	"Light Green",
 	"Medium Green",
 	"Dark Green",
-	"Light Purple",
-	"Medium Purple",
-	"Dark Purple",
 	"Light Brown",
 	"Medium Brown",
 	"Dark Brown",
@@ -96,12 +95,6 @@ GLOBAL_LIST_INIT(eye_colors, sort_list(list(
 			. = "#16552a"
 		if("Dark Green")
 			. = "#112315"
-		if("Light Purple")
-			. = "#5c5277"
-		if("Medium Purple")
-			. = "#403454"
-		if("Dark Purple")
-			. = "#1b1424"
 		if("Light Brown")
 			. = "#79553b"
 		if("Medium Brown")
@@ -157,6 +150,7 @@ GLOBAL_LIST_INIT(underwear_colors, sort_list(list(
 		if("White")
 			. = "#FFFFFF"
 
+/*
 /proc/random_voice_type(gender)
 	switch(gender)
 		if(MALE)
@@ -185,3 +179,4 @@ GLOBAL_LIST_INIT(female_voice_type_list, sort_list(list(
 	"female_06",
 	"female_07",
 	)))
+	*/
